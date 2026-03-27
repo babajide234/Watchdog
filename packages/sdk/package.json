@@ -1,0 +1,34 @@
+{
+  "name": "react-watchdog",
+  "version": "0.1.0",
+  "description": "Lightweight React error monitoring SDK",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --format cjs,esm --dts",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "monitoring",
+    "error-tracking",
+    "sentry"
+  ],
+  "license": "MIT"
+}
