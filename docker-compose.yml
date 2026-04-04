@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: watchdog
       POSTGRES_PASSWORD: watchdog
     ports:
-      - "5432:5432"
+      - "5445:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./packages/api/init.sql:/docker-entrypoint-initdb.d/init.sql
@@ -20,8 +20,8 @@ services:
 
   api:
     build:
-      context: ./packages/api
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: packages/api/Dockerfile
     container_name: watchdog_api
     restart: always
     ports:
@@ -34,12 +34,43 @@ services:
       NODE_ENV: production
       PORT: "4000"
 
+  dashboard:
+    build:
+      context: .
+      dockerfile: packages/dashboard/Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:4000
+    container_name: watchdog_dashboard
+    restart: always
+    ports:
+      - "3001:3001"
+    depends_on:
+      - api
+
+  landing:
+    build:
+      context: .
+      dockerfile: apps/landing/Dockerfile
+    container_name: watchdog_landing
+    restart: always
+    ports:
+      - "3000:3000"
+
+  docs:
+    build:
+      context: .
+      dockerfile: apps/docs/Dockerfile
+    container_name: watchdog_docs
+    restart: always
+    ports:
+      - "3002:3002"
+
   pgadmin:
     image: dpage/pgadmin4:latest
     container_name: watchdog_pgadmin
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@watchdog.local
+      PGADMIN_DEFAULT_EMAIL: admin@watchdog.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "5050:80"

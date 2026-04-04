@@ -42,8 +42,10 @@ docker compose up --build
 ```
 
 - **API**: [http://localhost:4000](http://localhost:4000)
-- **pgAdmin**: [http://localhost:5050](http://localhost:5050) (Login: `admin@watchdog.local` / `admin`)
-- **Dashboard**: Run `pnpm dev` locally to connect to the Docker API (see below).
+- **Dashboard**: [http://localhost:3001](http://localhost:3001)
+- **Docs**: [http://localhost:3002](http://localhost:3002)
+- **pgAdmin**: [http://localhost:5050](http://localhost:5050) (Login: `admin@watchdog.com` / `admin`)
+- **PostgreSQL**: `localhost:5445`
 
 ---
 
