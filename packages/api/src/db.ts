@@ -3,7 +3,7 @@ import { Pool } from "pg";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
-  "postgres://watchdog:watchdog@localhost:5432/watchdog";
+  "postgres://watchdog:watchdog@localhost:5445/watchdog";
 
 const pool = new Pool({
   connectionString: DATABASE_URL,
