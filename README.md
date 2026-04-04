@@ -80,12 +80,12 @@ To start monitoring your React app:
 
 ```bash
 # In your React project
-npm install react-watchdog
+npm install @watchdog/sdk
 ```
 
 **Initialization**:
 ```tsx
-import { initMonitor } from 'react-watchdog';
+import { initMonitor } from '@watchdog/sdk';
 
 initMonitor({
   projectId: 'my-awesome-app',

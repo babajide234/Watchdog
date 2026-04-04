@@ -1,7 +1,19 @@
 {
-  "name": "react-watchdog",
+  "name": "@watchdog/sdk",
   "version": "0.1.0",
   "description": "Lightweight React error monitoring SDK",
+  "author": "React Watchdog Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watchdog/watchdog.git",
+    "directory": "packages/sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/watchdog/watchdog/issues"
+  },
+  "homepage": "https://github.com/watchdog/watchdog#readme",
+  "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -35,6 +47,5 @@
     "monitoring",
     "error-tracking",
     "sentry"
-  ],
-  "license": "MIT"
+  ]
 }
