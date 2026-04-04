@@ -1,15 +1,8 @@
 {
+  "extends": "@watchdog/tsconfig/base.json",
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["ES2017", "DOM"],
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "strict": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
     "outDir": "./dist",
-    "skipLibCheck": true
+    "lib": ["ES2017", "DOM"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

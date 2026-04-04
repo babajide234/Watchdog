@@ -1,4 +1,4 @@
-import type { WatchdogConfig, WatchdogEvent } from "./types";
+import type { WatchdogConfig, WatchdogEvent } from "@watchdog/types";
 
 let config: WatchdogConfig | null = null;
 
@@ -112,4 +112,4 @@ export function destroyMonitor(): void {
   config = null;
 }
 
-export type { WatchdogConfig, WatchdogEvent } from "./types";
+export type { WatchdogConfig, WatchdogEvent } from "@watchdog/types";

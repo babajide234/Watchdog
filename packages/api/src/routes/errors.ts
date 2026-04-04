@@ -1,8 +1,8 @@
 import { Router, Request, Response } from "express";
 import pool from "../db";
-import type { CreateErrorDto, ErrorRecord } from "../types";
+import type { CreateErrorDto, ErrorRecord } from "@watchdog/types";
 
-const router = Router();
+const router: Router = Router();
 
 /**
  * POST /errors

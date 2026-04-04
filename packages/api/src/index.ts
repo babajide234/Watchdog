@@ -4,7 +4,7 @@ import cors from "cors";
 import { initDb } from "./db";
 import errorsRouter from "./routes/errors";
 
-const app = express();
+const app: express.Application = express();
 const PORT = process.env.PORT ?? 4000;
 
 // Middleware
