@@ -1,0 +1,10 @@
+{
+  "name": "@watchdog/tailwind-config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "tailwind.config.ts",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "3.4.1"
+  }
+}
