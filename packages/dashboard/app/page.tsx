@@ -8,8 +8,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+  Badge,
+} from "@watchdog/ui";
 import { AlertTriangle, Activity, Clock, TrendingUp } from "lucide-react";
 
 export default function OverviewPage() {

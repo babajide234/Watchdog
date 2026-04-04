@@ -1,13 +1,4 @@
-export interface ErrorRecord {
-  id: number;
-  project_id: string;
-  type: string;
-  message: string;
-  stack: string | null;
-  url: string | null;
-  user_agent: string | null;
-  created_at: string;
-}
+import type { ErrorRecord } from "@watchdog/types";
 
 export interface ErrorsResponse {
   errors: ErrorRecord[];
@@ -21,17 +12,24 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
 export async function fetchErrors(projectId?: string): Promise<ErrorsResponse> {
   const url = new URL(`${API_BASE}/errors`);
   if (projectId) url.searchParams.set("projectId", projectId);
-  const res = await fetch(url.toString(), { next: { revalidate: 0 } });
+  
+  const res = await fetch(url.toString(), { 
+    cache: 'no-store',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  
   if (!res.ok) throw new Error("Failed to fetch errors");
   return res.json() as Promise<ErrorsResponse>;
 }
 
-export async function fetchError(id: number): Promise<ErrorRecord> {
-  const res = await fetch(`${API_BASE}/errors/${id}`, { next: { revalidate: 0 } });
+export async function fetchError(id: string): Promise<ErrorRecord> {
+  const res = await fetch(`${API_BASE}/errors/${id}`, { cache: 'no-store' });
   if (!res.ok) throw new Error("Failed to fetch error");
   return res.json() as Promise<ErrorRecord>;
 }
 
-export async function deleteError(id: number): Promise<void> {
+export async function deleteError(id: string): Promise<void> {
   await fetch(`${API_BASE}/errors/${id}`, { method: "DELETE" });
 }

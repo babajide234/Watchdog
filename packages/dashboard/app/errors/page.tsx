@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { fetchErrors, deleteError, type ErrorRecord } from "@/lib/api";
+import { fetchErrors, deleteError } from "@/lib/api";
+import type { ErrorRecord } from "@watchdog/types";
 import {
   Table,
   TableBody,
@@ -10,18 +11,20 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/dialog";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
+  Badge,
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  ScrollArea,
+} from "@watchdog/ui";
 import { Trash2, RefreshCw, ExternalLink } from "lucide-react";
 import { timeAgo, formatDate, truncate } from "@/lib/utils";
 

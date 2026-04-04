@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "@watchdog/dashboard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,8 @@
     "clean": "rm -rf .next"
   },
   "dependencies": {
+    "@watchdog/types": "workspace:*",
+    "@watchdog/ui": "workspace:*",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-scroll-area": "^1.0.5",
@@ -26,6 +28,8 @@
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
+    "@watchdog/tsconfig": "workspace:*",
+    "@watchdog/tailwind-config": "workspace:*",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
