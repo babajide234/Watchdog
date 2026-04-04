@@ -56,6 +56,9 @@ docker compose up --build
 - **Docs**: [https://watchdog-docs-nu.vercel.app/docs](https://watchdog-docs-nu.vercel.app/docs)
 - **API (Ingestion)**: [https://watchdog-api-pvq7.onrender.com](https://watchdog-api-pvq7.onrender.com)
 
+> [!NOTE]
+> **API Keep-Alive**: To prevent the Render free tier from spinning down, a [GitHub Action](.github/workflows/keep-alive.yml) is configured to ping the `/health` endpoint every 15 minutes.
+
 ---
 
 ## 💻 Local Development

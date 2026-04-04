@@ -1,0 +1,21 @@
+name: Keep API Alive
+
+on:
+  schedule:
+    # Run every 15 minutes
+    - cron: "*/15 * * * *"
+  workflow_dispatch: # Allows manual trigger from the GitHub UI
+
+jobs:
+  ping-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Watchdog API
+        run: |
+          status_code=$(curl -s -o /dev/null -w "%{http_code}" https://watchdog-api-pvq7.onrender.com/health)
+          if [ $status_code -eq 200 ]; then
+            echo "✅ API is up and running"
+          else
+            echo "❌ API responded with status code: $status_code"
+            exit 1
+          fi
