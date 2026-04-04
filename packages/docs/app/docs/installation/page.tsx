@@ -38,6 +38,17 @@ npm run dev</code></pre>
 npm run dev</code></pre>
       <p>Dashboard runs at <code>http://localhost:3001</code>.</p>
 
+      <h2>Production Deployment</h2>
+      <p>When you're ready for production, deploy the Express API and Dashboard. Point your SDK to the deployed API endpoint:</p>
+      <pre><code>{`initMonitor({
+  endpoint: "https://watchdog-api-pvq7.onrender.com/errors",
+  projectId: "your-project-id",
+});`}</code></pre>
+      <p>
+        For documentation on how to host for free using Neon, Render, and Vercel,
+        see the <a href="/docs/self-hosting">Self-Hosting guide</a>.
+      </p>
+
       <h2>Verifying It Works</h2>
       <p>Throw a test error in your browser console to verify everything is connected:</p>
       <pre><code>// In your browser console:

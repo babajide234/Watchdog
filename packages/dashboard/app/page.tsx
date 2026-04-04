@@ -166,8 +166,8 @@ export default function OverviewPage() {
             <p className="text-xs text-muted-foreground mb-1">
               2. Initialize in your app entry point
             </p>
-            <pre className="rounded-md bg-muted px-4 py-3 text-sm font-mono overflow-x-auto">
-              {`import { initMonitor } from "@watchdog/sdk";\n\ninitMonitor({\n  endpoint: "http://localhost:4000/errors",\n  projectId: "my-project",\n});`}
+            <pre className="rounded-md bg-muted px-4 py-3 text-sm font-mono overflow-x-auto whitespace-pre">
+              {`import { initMonitor } from "@watchdog/sdk";\n\ninitMonitor({\n  endpoint: "${(process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(/\/$/, "")}/errors",\n  projectId: "your-project-id",\n});`}
             </pre>
           </div>
         </CardContent>

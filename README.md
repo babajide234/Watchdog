@@ -49,6 +49,15 @@ docker compose up --build
 
 ---
 
+## 🌐 Production Deployment
+
+- **Landing Page**: [https://watchdog-landing-hazel.vercel.app/](https://watchdog-landing-hazel.vercel.app/)
+- **Dashboard**: [https://watchdog-dashboard.vercel.app/](https://watchdog-dashboard.vercel.app/)
+- **Docs**: [https://watchdog-docs-nu.vercel.app/docs](https://watchdog-docs-nu.vercel.app/docs)
+- **API (Ingestion)**: [https://watchdog-api-pvq7.onrender.com](https://watchdog-api-pvq7.onrender.com)
+
+---
+
 ## 💻 Local Development
 
 ### Prerequisites
