@@ -11,7 +11,7 @@ export default function ConfigurationPage() {
 
       <h3>endpoint (required)</h3>
       <p>The URL of your React Watchdog API server.</p>
-      <pre><code>endpoint: "http://localhost:4000/errors"</code></pre>
+      <pre><code>endpoint: "https://watchdog-api-pvq7.onrender.com/errors"</code></pre>
 
       <h3>projectId (required)</h3>
       <p>A unique identifier for your project. Used to group errors in the dashboard.</p>
@@ -23,7 +23,7 @@ export default function ConfigurationPage() {
         when you don't want to send errors.
       </p>
       <pre><code>{`initMonitor({
-  endpoint: "http://localhost:4000/errors",
+  endpoint: "https://watchdog-api-pvq7.onrender.com/errors",
   projectId: "my-app",
   disabled: process.env.NODE_ENV === "development",
 });`}</code></pre>

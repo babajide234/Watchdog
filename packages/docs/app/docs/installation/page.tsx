@@ -22,21 +22,21 @@ pnpm add react-watchdog</code></pre>
       <pre><code>{`import { initMonitor } from "react-watchdog";
 
 initMonitor({
-  endpoint: "http://localhost:4000/errors",
+  endpoint: "https://watchdog-api-pvq7.onrender.com/errors",
   projectId: "my-project",
 });`}</code></pre>
 
       <h2>Step 3 — Start the API server</h2>
-      <p>The SDK sends errors to your local API. Start the Express backend:</p>
+      <p>The SDK sends errors to the live API. You can also self-host the backend:</p>
       <pre><code>cd packages/api
 npm run dev</code></pre>
-      <p>The API will start on <code>http://localhost:4000</code>.</p>
+      <p>The live API is at <code>https://watchdog-api-pvq7.onrender.com</code>.</p>
 
       <h2>Step 4 — Open the Dashboard</h2>
       <p>Start the monitoring dashboard to see errors in real-time:</p>
       <pre><code>cd packages/dashboard
 npm run dev</code></pre>
-      <p>Dashboard runs at <code>http://localhost:3001</code>.</p>
+      <p>Dashboard runs at <code>https://watchdog-dashboard.vercel.app/</code>.</p>
 
       <h2>Production Deployment</h2>
       <p>When you're ready for production, deploy the Express API and Dashboard. Point your SDK to the deployed API endpoint:</p>

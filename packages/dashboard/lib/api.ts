@@ -7,7 +7,7 @@ export interface ErrorsResponse {
   offset: number;
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "https://watchdog-api-pvq7.onrender.com";
 
 export async function fetchErrors(projectId?: string): Promise<ErrorsResponse> {
   const url = new URL(`${API_BASE}/errors`);

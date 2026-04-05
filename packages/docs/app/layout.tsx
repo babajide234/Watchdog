@@ -28,8 +28,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="text-xs text-zinc-500 font-normal">docs</span>
             </Link>
             <div className="flex items-center gap-4 text-sm text-zinc-500">
-              <Link href="http://localhost:3000" className="hover:text-white transition-colors">Landing</Link>
-              <Link href="http://localhost:3001" className="hover:text-white transition-colors">Dashboard</Link>
+              <Link href="https://watchdog-landing-hazel.vercel.app/" className="hover:text-white transition-colors">Landing</Link>
+              <Link href="https://watchdog-dashboard.vercel.app/" className="hover:text-white transition-colors">Dashboard</Link>
             </div>
           </div>
         </header>

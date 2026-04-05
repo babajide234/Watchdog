@@ -4,11 +4,11 @@ export default function ApiReferencePage() {
       <h1>API Reference</h1>
       <p>
         The React Watchdog API is a simple Express server that receives and stores
-        error events. It runs on <code>http://localhost:4000</code> by default.
+        error events. The live instance runs on <code>https://watchdog-api-pvq7.onrender.com</code>.
       </p>
 
       <h2>Base URL</h2>
-      <pre><code>http://localhost:4000</code></pre>
+      <pre><code>https://watchdog-api-pvq7.onrender.com</code></pre>
 
       <h2>Endpoints</h2>
 

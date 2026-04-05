@@ -75,7 +75,7 @@ function handleUnhandledRejection(event: PromiseRejectionEvent): void {
  * import { initMonitor } from "@watchdog/sdk";
  *
  * initMonitor({
- *   endpoint: "http://localhost:4000/errors",
+ *   endpoint: "https://watchdog-api-pvq7.onrender.com/errors",
  *   projectId: "my-project",
  * });
  */

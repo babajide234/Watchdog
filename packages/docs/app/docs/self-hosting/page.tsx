@@ -22,10 +22,10 @@ pnpm install
 pnpm dev</code></pre>
       <p>Services will start on:</p>
       <ul>
-        <li>Landing: <code>http://localhost:3000</code></li>
-        <li>Dashboard: <code>http://localhost:3001</code></li>
-        <li>Docs: <code>http://localhost:3002</code></li>
-        <li>API: <code>http://localhost:4000</code></li>
+        <li>Landing: <code>https://watchdog-landing-hazel.vercel.app/</code></li>
+        <li>Dashboard: <code>https://watchdog-dashboard.vercel.app/</code></li>
+        <li>Docs: <code>https://watchdog-docs-nu.vercel.app/docs</code></li>
+        <li>API: <code>https://watchdog-api-pvq7.onrender.com</code></li>
       </ul>
 
       <h2>Production Deployment</h2>
@@ -53,7 +53,7 @@ npm start</code></pre>
       <h3>API</h3>
       <pre><code>PORT=4000           # API server port (default: 4000)</code></pre>
       <h3>Dashboard</h3>
-      <pre><code>NEXT_PUBLIC_API_URL=http://localhost:4000  # API base URL</code></pre>
+      <pre><code>NEXT_PUBLIC_API_URL=https://watchdog-api-pvq7.onrender.com  # API base URL</code></pre>
     </div>
   );
 }

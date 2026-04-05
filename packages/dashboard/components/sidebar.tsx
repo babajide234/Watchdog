@@ -51,8 +51,8 @@ export function Sidebar() {
           Monitoring{" "}
           <span className="font-medium text-foreground">demo-project</span>
         </p>
-        <p className="text-xs text-muted-foreground mt-0.5 truncate" title={process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000"}>
-          API: {process.env.NEXT_PUBLIC_API_URL?.replace(/^https?:\/\//, "") || "localhost:4000"}
+        <p className="text-xs text-muted-foreground mt-0.5 truncate" title={process.env.NEXT_PUBLIC_API_URL || "https://watchdog-api-pvq7.onrender.com"}>
+          API: {process.env.NEXT_PUBLIC_API_URL?.replace(/^https?:\/\//, "") || "watchdog-api-pvq7.onrender.com"}
         </p>
       </div>
     </aside>

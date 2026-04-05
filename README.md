@@ -101,7 +101,7 @@ import { initMonitor } from '@watchdog/sdk';
 
 initMonitor({
   projectId: 'my-awesome-app',
-  endpoint: 'http://localhost:4000/errors',
+  endpoint: 'https://watchdog-api-pvq7.onrender.com/errors',
 });
 ```
 

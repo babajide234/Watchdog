@@ -53,10 +53,10 @@ export default function HomePage() {
             <a href="#features" className="hover:text-white transition-colors">Features</a>
             <a href="#how-it-works" className="hover:text-white transition-colors">How it Works</a>
             <a href="#install" className="hover:text-white transition-colors">Install</a>
-            <Link href="http://localhost:3002" className="hover:text-white transition-colors">Docs</Link>
+            <Link href="https://watchdog-docs-nu.vercel.app/docs" className="hover:text-white transition-colors">Docs</Link>
           </div>
           <Link
-            href="http://localhost:3001"
+            href="https://watchdog-dashboard.vercel.app/"
             className="text-sm bg-white text-black px-4 py-1.5 rounded-full font-medium hover:bg-white/90 transition-colors"
           >
             Open Dashboard →
@@ -96,7 +96,7 @@ export default function HomePage() {
               Get Started Free
             </Link>
             <Link
-              href="http://localhost:3001"
+              href="https://watchdog-dashboard.vercel.app/"
               className="px-8 py-3 rounded-lg border border-white/15 bg-white/5 font-medium text-white hover:bg-white/10 transition-colors"
             >
               Live Dashboard ↗
@@ -123,7 +123,7 @@ export default function HomePage() {
                 {"\n  "}
                 <span className="text-blue-300">endpoint</span>
                 {": "}
-                <span className="text-green-400">&quot;http://localhost:4000/errors&quot;</span>
+                <span className="text-green-400">&quot;https://watchdog-api-pvq7.onrender.com/errors&quot;</span>
                 {",\n  "}
                 <span className="text-blue-300">projectId</span>
                 {": "}
@@ -191,7 +191,7 @@ export default function HomePage() {
               { label: "Install the package", code: "npm install react-watchdog" },
               {
                 label: "Initialize in your entry point (e.g. main.tsx)",
-                code: `import { initMonitor } from "react-watchdog";\n\ninitMonitor({\n  endpoint: "http://localhost:4000/errors",\n  projectId: "my-project",\n});`,
+                code: `import { initMonitor } from "react-watchdog";\n\ninitMonitor({\n  endpoint: "https://watchdog-api-pvq7.onrender.com/errors",\n  projectId: "my-project",\n});`,
               },
               { label: "Start the API server", code: "cd packages/api && npm run dev" },
             ].map(({ label, code }) => (
@@ -203,7 +203,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 text-center">
             <Link
-              href="http://localhost:3002"
+              href="https://watchdog-docs-nu.vercel.app/docs"
               className="text-sm text-orange-400 hover:underline"
             >
               View full documentation →
@@ -238,8 +238,8 @@ export default function HomePage() {
             <span>MIT License</span>
           </div>
           <div className="flex items-center gap-6 text-sm text-white/40">
-            <Link href="http://localhost:3001" className="hover:text-white transition-colors">Dashboard</Link>
-            <Link href="http://localhost:3002" className="hover:text-white transition-colors">Docs</Link>
+            <Link href="https://watchdog-dashboard.vercel.app/" className="hover:text-white transition-colors">Dashboard</Link>
+            <Link href="https://watchdog-docs-nu.vercel.app/docs" className="hover:text-white transition-colors">Docs</Link>
             <span>Built with Next.js + Express</span>
           </div>
         </div>

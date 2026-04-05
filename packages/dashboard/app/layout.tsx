@@ -31,14 +31,14 @@ export default function RootLayout({
                 </div>
                 <div className="flex items-center gap-3">
                   <a
-                    href="http://localhost:3002"
+                    href="https://watchdog-docs-nu.vercel.app/docs"
                     target="_blank"
                     className="text-xs text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Docs ↗
                   </a>
                   <a
-                    href="http://localhost:3000"
+                    href="https://watchdog-landing-hazel.vercel.app/"
                     target="_blank"
                     className="text-xs text-muted-foreground hover:text-foreground transition-colors"
                   >
