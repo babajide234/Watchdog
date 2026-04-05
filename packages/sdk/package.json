@@ -4,6 +4,9 @@
   "description": "Lightweight React error monitoring SDK",
   "author": "React Watchdog Team",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/watchdog/watchdog.git",
