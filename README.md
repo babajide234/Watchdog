@@ -91,13 +91,12 @@ docker compose up --build
 To start monitoring your React app:
 
 ```bash
-# In your React project
-npm install @watchdog/sdk
+npm install react-watchdog-sdk
 ```
 
 **Initialization**:
 ```tsx
-import { initMonitor } from '@watchdog/sdk';
+import { initMonitor } from 'react-watchdog-sdk';
 
 initMonitor({
   projectId: 'my-awesome-app',

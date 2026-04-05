@@ -1,4 +1,4 @@
-# @watchdog/sdk
+# react-watchdog-sdk
 
 ## 0.1.1
 

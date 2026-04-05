@@ -159,7 +159,7 @@ export default function OverviewPage() {
               1. Install the SDK
             </p>
             <code className="block rounded-md bg-muted px-4 py-3 text-sm font-mono">
-              npm install @watchdog/sdk
+              npm install react-watchdog-sdk
             </code>
           </div>
           <div>
@@ -167,7 +167,7 @@ export default function OverviewPage() {
               2. Initialize in your app entry point
             </p>
             <pre className="rounded-md bg-muted px-4 py-3 text-sm font-mono overflow-x-auto whitespace-pre">
-              {`import { initMonitor } from "@watchdog/sdk";\n\ninitMonitor({\n  endpoint: "${(process.env.NEXT_PUBLIC_API_URL || "https://watchdog-api-pvq7.onrender.com").replace(/\/$/, "")}/errors",\n  projectId: "your-project-id",\n});`}
+              {`import { initMonitor } from "react-watchdog-sdk";\n\ninitMonitor({\n  endpoint: "${(process.env.NEXT_PUBLIC_API_URL || "https://watchdog-api-pvq7.onrender.com").replace(/\/$/, "")}/errors",\n  projectId: "your-project-id",\n});`}
             </pre>
           </div>
         </CardContent>

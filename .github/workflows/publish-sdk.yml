@@ -33,7 +33,7 @@ jobs:
       - name: Install Dependencies and Build
         run: |
           pnpm install
-          pnpm build --filter=@watchdog/sdk...
+          pnpm build --filter=react-watchdog-sdk...
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets

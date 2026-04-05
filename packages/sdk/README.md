@@ -1,15 +1,15 @@
-# @watchdog/sdk 🐕
+# react-watchdog-sdk 🐕
 
 Lightweight React error monitoring SDK for [React Watchdog](https://github.com/watchdog/watchdog).
 
 ## Installation
 
 ```bash
-npm install @watchdog/sdk
+npm install react-watchdog-sdk
 # or
-pnpm add @watchdog/sdk
+pnpm add react-watchdog-sdk
 # or
-yarn add @watchdog/sdk
+yarn add react-watchdog-sdk
 ```
 
 ## Quick Start
@@ -17,7 +17,7 @@ yarn add @watchdog/sdk
 Initialize the monitor at the very beginning of your application entry point (e.g., `src/main.tsx` or `src/index.tsx`):
 
 ```tsx
-import { initMonitor } from "@watchdog/sdk";
+import { initMonitor } from "react-watchdog-sdk";
 
 initMonitor({
   endpoint: "https://your-watchdog-api.com/errors",

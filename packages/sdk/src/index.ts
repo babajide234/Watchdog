@@ -72,7 +72,7 @@ function handleUnhandledRejection(event: PromiseRejectionEvent): void {
  * Initialize the React Watchdog error monitoring SDK.
  *
  * @example
- * import { initMonitor } from "@watchdog/sdk";
+ * import { initMonitor } from "react-watchdog-sdk";
  *
  * initMonitor({
  *   endpoint: "https://watchdog-api-pvq7.onrender.com/errors",
