@@ -1,6 +1,6 @@
 {
   "name": "@watchdog/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight React error monitoring SDK",
   "author": "React Watchdog Team",
   "license": "MIT",
