@@ -32,7 +32,7 @@ jobs:
 
       - name: Install Dependencies and Build
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install
           pnpm build --filter=@watchdog/sdk...
 
       - name: Create Release Pull Request or Publish to npm
